@@ -1,8 +1,8 @@
-package prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.repository;
+package prometheus.backend.webflux.EspInformation.repository;
 
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
-import prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.entity.Position;
+import prometheus.backend.webflux.EspInformation.entity.Position;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

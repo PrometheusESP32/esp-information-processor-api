@@ -1,9 +1,9 @@
-package prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation;
+package prometheus.backend.webflux.EspInformation;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.entity.Position;
-import prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.service.PositionService;
+import prometheus.backend.webflux.EspInformation.entity.Position;
+import prometheus.backend.webflux.EspInformation.service.PositionService;
 import reactor.core.publisher.Flux;
 
 import java.util.ArrayList;

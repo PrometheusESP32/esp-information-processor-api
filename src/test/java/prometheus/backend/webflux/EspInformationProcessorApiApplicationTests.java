@@ -1,4 +1,4 @@
-package prometheus.backend.webflux.esp32.espinformationprocessorapi;
+package prometheus.backend.webflux;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

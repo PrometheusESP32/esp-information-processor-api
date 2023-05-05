@@ -1,8 +1,8 @@
-package prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.service;
+package prometheus.backend.webflux.EspInformation.service;
 
 import org.springframework.stereotype.Service;
-import prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.entity.Position;
-import prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.repository.PositionRepository;
+import prometheus.backend.webflux.EspInformation.repository.PositionRepository;
+import prometheus.backend.webflux.EspInformation.entity.Position;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

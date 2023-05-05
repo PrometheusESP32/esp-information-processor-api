@@ -1,4 +1,4 @@
-package prometheus.backend.webflux.esp32.espinformationprocessorapi;
+package prometheus.backend.webflux;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package prometheus.backend.webflux.esp32.espinformationprocessorapi.EspInformation.entity;
+package prometheus.backend.webflux.EspInformation.entity;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
