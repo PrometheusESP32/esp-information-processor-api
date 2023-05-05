@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /esp-information-processor-api
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+spring:
+  r2dbc:
+    url: "r2dbc:pool:postgresql://localhost:15432/prometheus?schema=public"
+    username: "user-admin"
+    password: "PRe7h68%7LAK3N^P"
+    initialization-mode: always
