@@ -1,0 +1,20 @@
+version: "3.1"
+
+services:
+  app:
+    build: .
+    environment:
+      JAVA_OPTS: "-Xms256m -Xmx1024m"
+      JAVA_CONFIGS: "--spring.config.location=/home/application.yaml"
+      TIME_ZONE: "-Dlogback.timezone=Asia/Bangkok"
+    volumes:
+      - ./config/application.yaml:/home/application.yaml
+    hostname: esp-information-processor-api
+    networks:
+      - app
+    container_name: esp-information-processor-api
+
+networks:
+  app:
+    name: prometheus
+    driver: bridge
