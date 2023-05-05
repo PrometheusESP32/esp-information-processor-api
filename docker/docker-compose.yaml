@@ -5,6 +5,7 @@ services:
     build:
       context: ../
       dockerfile: Dockerfile
+      target: runner
     environment:
       JAVA_OPTS: "-Xms256m -Xmx1024m"
       JAVA_CONFIGS: "--spring.config.location=/home/application.yaml"
