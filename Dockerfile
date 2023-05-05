@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk-jammy AS builder
-ARG JAR_NAME=esp-information-processor-api-0.0.1-SNAPSHOT.jar
+ARG JAR_NAME=prometheus-esp-information-processor-api-0.0.1-SNAPSHOT.jar
 RUN mkdir -p /home
 WORKDIR /home
 COPY . .
@@ -8,7 +8,7 @@ RUN /bin/sh -c "./mvnw dependency:resolve"
 RUN /bin/sh -c "./mvnw clean package"
 
 FROM eclipse-temurin:17-jdk-jammy AS runner
-ARG JAR_NAME=esp-information-processor-api-0.0.1-SNAPSHOT.jar
+ARG JAR_NAME=prometheus-esp-information-processor-api-0.0.1-SNAPSHOT.jar
 
 RUN mkdir -p /home
 COPY --from=builder /home/target/${JAR_NAME} /home/app.jar

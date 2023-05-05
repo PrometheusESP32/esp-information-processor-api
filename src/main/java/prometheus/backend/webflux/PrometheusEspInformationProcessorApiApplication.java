@@ -6,10 +6,10 @@ import org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories;
 
 @EnableR2dbcRepositories
 @SpringBootApplication
-public class EspInformationProcessorApiApplication {
+public class PrometheusEspInformationProcessorApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EspInformationProcessorApiApplication.class, args);
+		SpringApplication.run(PrometheusEspInformationProcessorApiApplication.class, args);
 	}
 
 }

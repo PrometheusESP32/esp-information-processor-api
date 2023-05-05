@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>prometheus.backend.webflux</groupId>
-	<artifactId>esp-information-processor-api</artifactId>
+	<artifactId>prometheus-esp-information-processor-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>esp-information-processor-api</name>
+	<name>prometheus-esp-information-processor-api</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
