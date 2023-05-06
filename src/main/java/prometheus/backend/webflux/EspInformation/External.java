@@ -40,7 +40,7 @@ public class External {
                         position2.setTo_position(position1.getTo_position());
                         position2.setIp_address(position2.getIp_address());
                         position2.setPort(position2.getPort());
-                        return this.positionService.createPosition(position2);
+                        return this.positionService.updatePosition(position2);
                     })
                     .doOnError(throwable -> log.error(throwable.getMessage()));
         }).subscribeOn(parallel()).doOnError(throwable -> log.error(throwable.getMessage()));

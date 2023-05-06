@@ -4,6 +4,10 @@ logging:
   level:
     org.springframework.r2dbc: DEBUG
 spring:
+  application:
+    name: prometheus-esp-information-processor-api
+  webflux:
+    base-path: /prometheus-esp-information-processor-api
   r2dbc:
     url: "r2dbc:pool:postgresql://localhost:15432/prometheus?schema=public"
     username: "user-admin"
